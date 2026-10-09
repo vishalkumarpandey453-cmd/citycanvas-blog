@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityCanvas | Stories Worth Sharing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">CITY<span>CANVAS</span></a>
+    <button id="menuToggle" class="menu-toggle">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">THE MODERN CITY JOURNAL</p>
+        <h1>Ideas worth <em>sharing.</em></h1>
+        <p class="intro">
+          Discover stories about technology, travel, lifestyle,
+          and the little things that make everyday life interesting.
+        </p>
+        <a href="#stories" class="button">Explore Stories ↓</a>
+      </div>
+
+      <div class="art">
+        <div class="circle"><span>URBAN<br>NOTES</span></div>
+        <p>READ · THINK · DISCOVER</p>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <p class="eyebrow">THE LATEST</p>
+      <h2>Stories to explore</h2>
+      <p class="muted">Small ideas. New perspectives.</p>
+
+      <div class="filters">
+        <button class="filter active" data-category="All">All stories</button>
+        <button class="filter" data-category="Technology">Technology</button>
+        <button class="filter" data-category="Travel">Travel</button>
+        <button class="filter" data-category="Lifestyle">Lifestyle</button>
+      </div>
+
+      <div class="story-grid" id="storyGrid"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <p class="eyebrow">ABOUT CITYCANVAS</p>
+      <h2>A place for curious minds.</h2>
+      <p class="muted">
+        CityCanvas is a blogging website concept for sharing useful
+        ideas, discoveries, and stories about modern life.
+      </p>
+    </section>
+
+    <section class="newsletter section" id="newsletter">
+      <p class="eyebrow">STAY IN THE LOOP</p>
+      <h2>A little inspiration, delivered.</h2>
+      <p class="muted">Subscribe to our newsletter demo.</p>
+
+      <form id="newsletterForm">
+        <input id="email" type="email"
+          placeholder="Enter your email address" required>
+        <button class="button" type="submit">Subscribe</button>
+      </form>
+      <p id="message" class="muted" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">CITYCANVAS</a>
+    <p>Made for curious minds · Web Development Project</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
